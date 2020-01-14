@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{211A9C2C-58E8-4866-BD61-DDE7EC0E7052}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AllDesignPatterns</RootNamespace>
+    <AssemblyName>AllDesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapter\Adaptee.cs" />
+    <Compile Include="Adapter\Adapter.cs" />
+    <Compile Include="Adapter\Client.cs" />
+    <Compile Include="Adapter\IAdapter.cs" />
+    <Compile Include="Builder\Client.cs" />
+    <Compile Include="Builder\ConcreteBuilder.cs" />
+    <Compile Include="Builder\Director.cs" />
+    <Compile Include="Builder\IBuilder.cs" />
+    <Compile Include="Builder\Product.cs" />
+    <Compile Include="ChainOfResponsibility\Handler.cs" />
+    <Compile Include="ChainOfResponsibility\Handler1.cs" />
+    <Compile Include="ChainOfResponsibility\Handler2.cs" />
+    <Compile Include="ChainOfResponsibility\Handler3.cs" />
+    <Compile Include="Facade\Client.cs" />
+    <Compile Include="Facade\SubSystem.cs" />
+    <Compile Include="Facade\SubSystem1.cs" />
+    <Compile Include="Facade\SubSystem2.cs" />
+    <Compile Include="Factory\Card.cs" />
+    <Compile Include="Factory\CardFactory.cs" />
+    <Compile Include="Factory\CreditCard.cs" />
+    <Compile Include="Factory\DebitCard.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype\InvitationCard.cs" />
+    <Compile Include="SingleTon\LazySingleTon.cs" />
+    <Compile Include="SingleTon\SingleTon.cs" />
+    <Compile Include="Statergy\Client.cs" />
+    <Compile Include="Statergy\IStatergy.cs" />
+    <Compile Include="Statergy\Statergy1.cs" />
+    <Compile Include="Statergy\Statergy2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
