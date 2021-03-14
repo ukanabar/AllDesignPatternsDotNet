@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace AllDesignPatterns.Builder
 {
-    class Product
+    //refer this link https://medium.com/@jacobcunningham/the-fluent-builder-pattern-ac1b6c23afc3
+    class FluentBuilder
     {
-        //2 methods 
-        //add parts
-        //List parts
     }
 }
