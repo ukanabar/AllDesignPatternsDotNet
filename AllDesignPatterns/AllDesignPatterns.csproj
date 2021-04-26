@@ -47,6 +47,7 @@
     <Compile Include="Adapter\Adapter.cs" />
     <Compile Include="Adapter\Client.cs" />
     <Compile Include="Adapter\IAdapter.cs" />
+    <Compile Include="Bridge\Example.cs" />
     <Compile Include="Builder\Client.cs" />
     <Compile Include="Builder\ConcreteBuilder.cs" />
     <Compile Include="Builder\Director.cs" />
@@ -57,6 +58,8 @@
     <Compile Include="ChainOfResponsibility\Handler1.cs" />
     <Compile Include="ChainOfResponsibility\Handler2.cs" />
     <Compile Include="ChainOfResponsibility\Handler3.cs" />
+    <Compile Include="Composite\Employee.cs" />
+    <Compile Include="Composite\Program.cs" />
     <Compile Include="Facade\Client.cs" />
     <Compile Include="Facade\SubSystem.cs" />
     <Compile Include="Facade\SubSystem1.cs" />
@@ -68,12 +71,14 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Prototype\InvitationCard.cs" />
+    <Compile Include="Proxy\Program.cs" />
     <Compile Include="SingleTon\LazySingleTon.cs" />
     <Compile Include="SingleTon\SingleTon.cs" />
     <Compile Include="Statergy\Client.cs" />
     <Compile Include="Statergy\IStatergy.cs" />
     <Compile Include="Statergy\Statergy1.cs" />
     <Compile Include="Statergy\Statergy2.cs" />
+    <Compile Include="Template\Program.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
